@@ -6,10 +6,9 @@ package TestCases;
 
 import bases.BaseWeb;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AuthenticationSignInPage;
-
-
 
 
 public class AuthenticationUserSignIn extends BaseWeb {
@@ -27,46 +26,54 @@ public class AuthenticationUserSignIn extends BaseWeb {
 	{
 		AuthenticationSignInPage login = PageFactory.initElements(driver, AuthenticationSignInPage.class);
 		
-		// Type valid username
-		login.typeEmail(validAdmin);
-
-		// type valid password
-		login.typePassword(validPassword);
-
-		// click login button
-		login.clickLoginButton();
-
-		Thread.sleep(2000);
-		
+		login.login(validAdmin, validPassword);
 		
 	}
 	
 	
 	/*
-	 * Feature	: Sign In with unregistered Username
-	 * Given	: the user type registered Company username
-	 * And		: user type unregistered username
-	 * And		: user type valid password
+	 * Feature	: Sign In with Invalid Email
+	 * Given	: the user type unregistered email
+	 * And		: user type password
 	 * When		: user click button sign in 
 	 * Then		: Displayed error message
 	 * And		: cannot enter the home page
 	 */
 	
 	@Test
-	public void A_002_LoginwithInvalidCredential() throws InterruptedException 
+	public void A_002_LoginwithInvalidEmail() throws InterruptedException 
 	{
 		AuthenticationSignInPage login = PageFactory.initElements(driver, AuthenticationSignInPage.class);
 		
-		// Type valid username
-		login.typeEmail(validAdmin);
-
-		// type valid password
-		login.typePassword(validPassword);
-
-		// click login button
-		login.clickLoginButton();
-
+		login.login("wrongEmail@gmail.com", "password");
+		
 		Thread.sleep(2000);
+		Assert.assertTrue(login.getInvalidCredential(), "Invalid credential message cannot be found");
+		
+		
+	}
+	
+	
+	/*
+	 * Feature	: Sign In with Invalid password
+	 * Given	: the user type registered email
+	 * And		: user type invalid password
+	 * When		: user click button sign in 
+	 * Then		: Displayed error message
+	 * And		: cannot enter the home page
+	 */
+	
+	@Test
+	public void A_003_LoginwithInvalidPassword() throws InterruptedException 
+	{
+		AuthenticationSignInPage login = PageFactory.initElements(driver, AuthenticationSignInPage.class);
+		
+		login.login("admin@gmail.com", "wrongpassword");
+		
+		Thread.sleep(2000);
+		Assert.assertTrue(login.getInvalidCredential(), "Invalid credential message cannot be found");
+		
+		
 	}
 	
 	

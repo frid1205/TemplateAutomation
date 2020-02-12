@@ -28,8 +28,8 @@ public class BaseWeb {
 
 	@BeforeSuite
 	public void settupTestingData() {
-		validAdmin = "admin@2359media.com";
-		validPassword = "password";
+		validAdmin 		= "admin@2359media.com";
+		validPassword 	= "password";
 	}
 
 	@BeforeSuite
