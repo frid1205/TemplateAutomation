@@ -28,6 +28,8 @@ public class AuthenticationUserSignIn extends BaseWeb {
 		
 		login.login(validAdmin, validPassword);
 		
+		Assert.assertEquals(login.getURL(), "http://salt-media-cms-dev.s3-website-ap-southeast-1.amazonaws.com/app-pages");
+		
 	}
 	
 	
@@ -47,7 +49,6 @@ public class AuthenticationUserSignIn extends BaseWeb {
 		
 		login.login("wrongEmail@gmail.com", "password");
 		
-		Thread.sleep(2000);
 		Assert.assertTrue(login.getInvalidCredential(), "Invalid credential message cannot be found");
 		
 		
@@ -70,7 +71,6 @@ public class AuthenticationUserSignIn extends BaseWeb {
 		
 		login.login("admin@gmail.com", "wrongpassword");
 		
-		Thread.sleep(2000);
 		Assert.assertTrue(login.getInvalidCredential(), "Invalid credential message cannot be found");
 		
 		

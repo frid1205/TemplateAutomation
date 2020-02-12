@@ -6,11 +6,12 @@
     <classes>
       <class name="TestCases.AuthenticationUserSignIn">
         <methods>
+          <include name="A_003_LoginwithInvalidPassword"/>
           <include name="setBaseConfig"/>
           <include name="settupTestingData"/>
           <include name="quitDriver"/>
-          <include name="A_002_LoginwithInvalidCredential"/>
           <include name="deleteScreenShot"/>
+          <include name="A_002_LoginwithInvalidEmail"/>
         </methods>
       </class> <!-- TestCases.AuthenticationUserSignIn -->
     </classes>
