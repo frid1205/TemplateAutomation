@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-02-12T10:51:20 WIB" name="MySuite" finished-at="2020-02-12T10:51:27 WIB" duration-ms="6286">
+    <groups>
+    </groups>
+    <test started-at="2020-02-12T10:51:20 WIB" name="Regresion test for 1.5.35" finished-at="2020-02-12T10:51:27 WIB" duration-ms="6286">
+      <class name="TestCases.AuthenticationUserSignIn">
+        <test-method is-config="true" signature="deleteScreenShot()[pri:0, instance:TestCases.AuthenticationUserSignIn@4f83df68]" started-at="2020-02-12T10:51:20 WIB" name="deleteScreenShot" finished-at="2020-02-12T10:51:20 WIB" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteScreenShot -->
+        <test-method is-config="true" signature="settupTestingData()[pri:0, instance:TestCases.AuthenticationUserSignIn@4f83df68]" started-at="2020-02-12T10:51:20 WIB" name="settupTestingData" finished-at="2020-02-12T10:51:20 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settupTestingData -->
+        <test-method is-config="true" signature="setBaseConfig(java.lang.String)[pri:0, instance:TestCases.AuthenticationUserSignIn@4f83df68]" started-at="2020-02-12T10:51:20 WIB" name="setBaseConfig" finished-at="2020-02-12T10:51:24 WIB" duration-ms="3588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseConfig -->
+        <test-method signature="A_001_AuthenticationWithUnregisteredCompanyUser()[pri:0, instance:TestCases.AuthenticationUserSignIn@4f83df68]" started-at="2020-02-12T10:51:24 WIB" name="A_001_AuthenticationWithUnregisteredCompanyUser" finished-at="2020-02-12T10:51:27 WIB" duration-ms="2552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A_001_AuthenticationWithUnregisteredCompanyUser -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.AuthenticationUserSignIn@4f83df68]" started-at="2020-02-12T10:51:27 WIB" name="quitDriver" finished-at="2020-02-12T10:51:27 WIB" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- TestCases.AuthenticationUserSignIn -->
+    </test> <!-- Regresion test for 1.5.35 -->
+  </suite> <!-- MySuite -->
+</testng-results>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MySuite" parallel="tests" thread-count="1" verbose="1">
+	<parameter name="browser" value="chrome"></parameter>
+  	<test name="Regresion test for 1.5.35" >
+	     <classes>
+	    		<class name="TestCases.AuthenticationUserSignIn">
+	    			<methods>
+	    				<include name="A_001_AuthenticationWithUnregisteredCompanyUser"></include>
+	    			</methods>
+	    		</class>
+	   			
+	    </classes>  
+  </test>
+  
+</suite>
