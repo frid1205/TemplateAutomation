@@ -9,8 +9,8 @@
           <include name="setBaseConfig"/>
           <include name="settupTestingData"/>
           <include name="quitDriver"/>
+          <include name="A_002_LoginwithInvalidCredential"/>
           <include name="deleteScreenShot"/>
-          <include name="A_001_AuthenticationWithUnregisteredCompanyUser"/>
         </methods>
       </class> <!-- TestCases.AuthenticationUserSignIn -->
     </classes>

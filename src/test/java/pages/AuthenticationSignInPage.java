@@ -29,7 +29,7 @@ public class AuthenticationSignInPage
 	@CacheLookup
 	WebElement password;
 	
-	@FindBy(how=How.XPATH,using="//*[@id='root']/div[1]/div[2]/form/div[2]/button")
+	@FindBy(how=How.XPATH,using="/html/body/div/div[1]/div[2]/form/div[2]/button")
 	@CacheLookup
 	WebElement submitButton;
 	
