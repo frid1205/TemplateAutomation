@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="9" total="11" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-12T13:39:14 WIB" name="MySuite" finished-at="2020-02-12T13:39:23 WIB" duration-ms="8885">
+  <suite started-at="2020-02-13T17:52:43 WIB" name="MySuite" finished-at="2020-02-13T17:53:17 WIB" duration-ms="33349">
     <groups>
     </groups>
-    <test started-at="2020-02-12T13:39:14 WIB" name="Regresion test for 1.5.35" finished-at="2020-02-12T13:39:23 WIB" duration-ms="8885">
-      <class name="TestCases.AuthenticationUserSignIn">
-        <test-method is-config="true" signature="deleteScreenShot()[pri:0, instance:TestCases.AuthenticationUserSignIn@747ddf94]" started-at="2020-02-12T13:39:14 WIB" name="deleteScreenShot" finished-at="2020-02-12T13:39:14 WIB" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteScreenShot -->
-        <test-method is-config="true" signature="settupTestingData()[pri:0, instance:TestCases.AuthenticationUserSignIn@747ddf94]" started-at="2020-02-12T13:39:14 WIB" name="settupTestingData" finished-at="2020-02-12T13:39:14 WIB" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- settupTestingData -->
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String)[pri:0, instance:TestCases.AuthenticationUserSignIn@747ddf94]" started-at="2020-02-12T13:39:14 WIB" name="setBaseConfig" finished-at="2020-02-12T13:39:20 WIB" duration-ms="5649" status="PASS">
+    <test started-at="2020-02-13T17:52:43 WIB" name="Regresion test for 1.5.35" finished-at="2020-02-13T17:53:17 WIB" duration-ms="33349">
+      <class name="TestCases.AppPages">
+        <test-method is-config="true" signature="setBaseConfig(java.lang.String)[pri:0, instance:TestCases.AppPages@4c583ecf]" started-at="2020-02-13T17:52:43 WIB" name="setBaseConfig" finished-at="2020-02-13T17:52:49 WIB" duration-ms="5743" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,33 +18,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseConfig -->
-        <test-method signature="A_001_LoginwithValidCredential()[pri:0, instance:TestCases.AuthenticationUserSignIn@747ddf94]" started-at="2020-02-12T13:39:20 WIB" name="A_001_LoginwithValidCredential" finished-at="2020-02-12T13:39:22 WIB" duration-ms="2653" status="PASS">
+        <test-method signature="login()[pri:0, instance:TestCases.AppPages@4c583ecf]" started-at="2020-02-13T17:52:49 WIB" name="login" finished-at="2020-02-13T17:52:55 WIB" duration-ms="5664" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A_001_LoginwithValidCredential -->
-        <test-method signature="A_002_LoginwithInvalidCredential()[pri:0, instance:TestCases.AuthenticationUserSignIn@747ddf94]" started-at="2020-02-12T13:39:22 WIB" name="A_002_LoginwithInvalidCredential" finished-at="2020-02-12T13:39:22 WIB" duration-ms="47" status="FAIL">
+        </test-method> <!-- login -->
+        <test-method signature="B_004_editAppPage()[pri:0, instance:TestCases.AppPages@4c583ecf]" started-at="2020-02-13T17:52:55 WIB" name="B_004_editAppPage" finished-at="2020-02-13T17:53:16 WIB" duration-ms="21232" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button"}
   (Session info: chrome=80.0.3987.100)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'Potatos-Mac.local', ip: 'fe80:0:0:0:8a1:153:e79:bbff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '9.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3973160ad94519c778b9e394a46f6505
-*** Element info: {Using=name, value=email}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:64885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d39c37275fbdf8e04e6e4099787e910f
+*** Element info: {Using=xpath, value=//*[@id="root"]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button"}
   (Session info: chrome=80.0.3987.100)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'Potatos-Mac.local', ip: 'fe80:0:0:0:8a1:153:e79:bbff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '9.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3973160ad94519c778b9e394a46f6505
-*** Element info: {Using=name, value=email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:64885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d39c37275fbdf8e04e6e4099787e910f
+*** Element info: {Using=xpath, value=//*[@id="root"]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -64,14 +56,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-at pages.AuthenticationSignInPage.typeEmail(AuthenticationSignInPage.java:39)
-at TestCases.AuthenticationUserSignIn.A_002_LoginwithInvalidCredential(AuthenticationUserSignIn.java:61)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at pages.AppPagesPage.clickAddPlaylistButton(AppPagesPage.java:196)
+at TestCases.AppPages.B_004_editAppPage(AppPages.java:97)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,11 +92,21 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A_002_LoginwithInvalidCredential -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.AuthenticationUserSignIn@747ddf94]" started-at="2020-02-12T13:39:23 WIB" name="quitDriver" finished-at="2020-02-12T13:39:23 WIB" duration-ms="147" status="PASS">
+        </test-method> <!-- B_004_editAppPage -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.AppPages@4c583ecf]" started-at="2020-02-13T17:53:16 WIB" name="quitDriver" finished-at="2020-02-13T17:53:17 WIB" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
+      </class> <!-- TestCases.AppPages -->
+      <class name="TestCases.AuthenticationUserSignIn">
+        <test-method is-config="true" signature="deleteScreenShot()[pri:0, instance:TestCases.AuthenticationUserSignIn@4d5d943d]" started-at="2020-02-13T17:52:43 WIB" name="deleteScreenShot" finished-at="2020-02-13T17:52:43 WIB" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteScreenShot -->
+        <test-method is-config="true" signature="settupTestingData()[pri:0, instance:TestCases.AuthenticationUserSignIn@4d5d943d]" started-at="2020-02-13T17:52:43 WIB" name="settupTestingData" finished-at="2020-02-13T17:52:43 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settupTestingData -->
       </class> <!-- TestCases.AuthenticationUserSignIn -->
     </test> <!-- Regresion test for 1.5.35 -->
   </suite> <!-- MySuite -->

@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-MySuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="TestCases.AuthenticationUserSignIn" class="method navigator-link" hash-for-method="A_002_LoginwithInvalidCredential">A_002_LoginwithInvalidCredential</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MySuite" title="TestCases.AppPages" class="method navigator-link" hash-for-method="B_004_editAppPage">B_004_editAppPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-MySuite -->
@@ -116,7 +116,7 @@
                     <div class="method-list-content passed suite-MySuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="TestCases.AuthenticationUserSignIn" class="method navigator-link" hash-for-method="A_001_LoginwithValidCredential">A_001_LoginwithValidCredential</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MySuite" title="TestCases.AppPages" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MySuite -->
@@ -134,23 +134,23 @@
           <div class="suite-MySuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestCases.AuthenticationUserSignIn</span>
+              <span class="class-name">TestCases.AppPages</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="A_002_LoginwithInvalidCredential">
-                  </a> <!-- A_002_LoginwithInvalidCredential -->
-                  <span class="method-name">A_002_LoginwithInvalidCredential</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
+                  <a name="B_004_editAppPage">
+                  </a> <!-- B_004_editAppPage -->
+                  <span class="method-name">B_004_editAppPage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button&quot;}
   (Session info: chrome=80.0.3987.100)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;Potatos-Mac.local&apos;, ip: &apos;fe80:0:0:0:8a1:153:e79:bbff%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;9.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3973160ad94519c778b9e394a46f6505
-*** Element info: {Using=name, value=email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:64885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d39c37275fbdf8e04e6e4099787e910f
+*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -158,14 +158,14 @@ Session ID: 3973160ad94519c778b9e394a46f6505
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at pages.AuthenticationSignInPage.typeEmail(AuthenticationSignInPage.java:39)
-	at TestCases.AuthenticationUserSignIn.A_002_LoginwithInvalidCredential(AuthenticationUserSignIn.java:61)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at pages.AppPagesPage.clickAddPlaylistButton(AppPagesPage.java:196)
+	at TestCases.AppPages.B_004_editAppPage(AppPages.java:97)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1380)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
@@ -180,14 +180,14 @@ Session ID: 3973160ad94519c778b9e394a46f6505
           <div class="suite-MySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.AuthenticationUserSignIn</span>
+              <span class="class-name">TestCases.AppPages</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="A_001_LoginwithValidCredential">
-                  </a> <!-- A_001_LoginwithValidCredential -->
-                  <span class="method-name">A_001_LoginwithValidCredential</span>
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,10 +207,20 @@ Session ID: 3973160ad94519c778b9e394a46f6505
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.AuthenticationUserSignIn&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;A_001_LoginwithValidCredential&quot;/&gt;
-          &lt;include name=&quot;A_002_LoginwithInvalidCredential&quot;/&gt;
+          &lt;exclude name=&quot;A_001_LoginwithValidCredential&quot;/&gt;
+          &lt;exclude name=&quot;A_002_LoginwithInvalidEmail&quot;/&gt;
+          &lt;exclude name=&quot;A_003_LoginwithInvalidPassword&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.AuthenticationUserSignIn --&gt;
+      &lt;class name=&quot;TestCases.AppPages&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;B_004_editAppPage&quot;/&gt;
+          &lt;exclude name=&quot;B_001_displayOfListPage&quot;/&gt;
+          &lt;exclude name=&quot;B_002_CreateNewKeyPage&quot;/&gt;
+          &lt;exclude name=&quot;B_003_searchAvailableAppPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.AppPages --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regresion test for 1.5.35 --&gt;
 &lt;/suite&gt; &lt;!-- MySuite --&gt;
@@ -224,7 +234,7 @@ Session ID: 3973160ad94519c778b9e394a46f6505
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regresion test for 1.5.35 (1 class)</span>
+                <span class="test-name">Regresion test for 1.5.35 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,18 +262,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'A_001_LoginwithValidCredential')
-data.setCell(0, 2, 'TestCases.AuthenticationUserSignIn')
-data.setCell(0, 3, 2653);
+data.setCell(0, 1, 'B_004_editAppPage')
+data.setCell(0, 2, 'TestCases.AppPages')
+data.setCell(0, 3, 21232);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'A_002_LoginwithInvalidCredential')
-data.setCell(1, 2, 'TestCases.AuthenticationUserSignIn')
-data.setCell(1, 3, 47);
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'TestCases.AppPages')
+data.setCell(1, 3, 5664);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-MySuite">
               </div> <!-- times-div-MySuite -->
             </div> <!-- times-div -->
@@ -278,9 +288,37 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MySuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">9 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.AuthenticationUserSignIn</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">A_003_LoginwithInvalidPassword</span>
+                <br/>
+                <span class="ignored-method-name">A_001_LoginwithValidCredential</span>
+                <br/>
+                <span class="ignored-method-name">A_002_LoginwithInvalidEmail</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.AppPages</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">B_003_searchAvailableAppPage</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">B_005_deleteAppPage</span>
+                <br/>
+                <span class="ignored-method-name">B_002_CreateNewKeyPage</span>
+                <br/>
+                <span class="ignored-method-name">B_001_displayOfListPage</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-MySuite" class="panel">
@@ -296,25 +334,28 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">settupTestingData</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.AppPages</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setBaseConfig(chrome)</span>
-                <span class="method-start">39 ms</span>
+                <span class="method-start">50 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">A_001_LoginwithValidCredential</span>
-                <span class="method-start">5697 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">5805 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">A_002_LoginwithInvalidCredential</span>
-                <span class="method-start">8356 ms</span>
+                <span class="method-name">B_004_editAppPage</span>
+                <span class="method-start">11472 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">8755 ms</span>
+                <span class="method-start">33173 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

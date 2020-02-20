@@ -1,48 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="13" total="21" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-12T16:58:16 WIB" name="MySuite" finished-at="2020-02-12T16:58:35 WIB" duration-ms="18599">
+  <suite started-at="2020-02-20T12:45:07 WIB" name="MySuite" finished-at="2020-02-20T12:45:39 WIB" duration-ms="32574">
     <groups>
     </groups>
-    <test started-at="2020-02-12T16:58:16 WIB" name="Regresion test for 1.5.35" finished-at="2020-02-12T16:58:35 WIB" duration-ms="18599">
+    <test started-at="2020-02-20T12:45:07 WIB" name="Regresion test for 1.5.35" finished-at="2020-02-20T12:45:39 WIB" duration-ms="32574">
       <class name="TestCases.AuthenticationUserSignIn">
-        <test-method is-config="true" signature="deleteScreenShot()[pri:0, instance:TestCases.AuthenticationUserSignIn@1bb266b3]" started-at="2020-02-12T16:58:16 WIB" name="deleteScreenShot" finished-at="2020-02-12T16:58:16 WIB" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="deleteScreenShot()[pri:0, instance:TestCases.AuthenticationUserSignIn@4da4253]" started-at="2020-02-20T12:45:07 WIB" name="deleteScreenShot" finished-at="2020-02-20T12:45:07 WIB" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteScreenShot -->
-        <test-method is-config="true" signature="settupTestingData()[pri:0, instance:TestCases.AuthenticationUserSignIn@1bb266b3]" started-at="2020-02-12T16:58:16 WIB" name="settupTestingData" finished-at="2020-02-12T16:58:16 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="settupTestingData()[pri:0, instance:TestCases.AuthenticationUserSignIn@4da4253]" started-at="2020-02-20T12:45:07 WIB" name="settupTestingData" finished-at="2020-02-20T12:45:07 WIB" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settupTestingData -->
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String)[pri:0, instance:TestCases.AuthenticationUserSignIn@1bb266b3]" started-at="2020-02-12T16:58:16 WIB" name="setBaseConfig" finished-at="2020-02-12T16:58:21 WIB" duration-ms="4809" status="PASS">
+      </class> <!-- TestCases.AuthenticationUserSignIn -->
+      <class name="TestCases.Playlist">
+        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:07 WIB" name="setBaseConfig" finished-at="2020-02-20T12:45:11 WIB" duration-ms="3770" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseConfig -->
-        <test-method signature="A_001_LoginwithValidCredential()[pri:0, instance:TestCases.AuthenticationUserSignIn@1bb266b3]" started-at="2020-02-12T16:58:21 WIB" name="A_001_LoginwithValidCredential" finished-at="2020-02-12T16:58:24 WIB" duration-ms="2655" status="PASS">
+        <test-method signature="login()[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:11 WIB" name="login" finished-at="2020-02-20T12:45:16 WIB" duration-ms="5643" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A_001_LoginwithValidCredential -->
-        <test-method signature="A_002_LoginwithInvalidEmail()[pri:0, instance:TestCases.AuthenticationUserSignIn@1bb266b3]" started-at="2020-02-12T16:58:24 WIB" name="A_002_LoginwithInvalidEmail" finished-at="2020-02-12T16:58:30 WIB" duration-ms="6598" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="C_001_DisplayofPlaylistList()[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:16 WIB" name="C_001_DisplayofPlaylistList" finished-at="2020-02-20T12:45:19 WIB" duration-ms="2260" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A_002_LoginwithInvalidEmail -->
-        <test-method signature="A_003_LoginwithInvalidPassword()[pri:0, instance:TestCases.AuthenticationUserSignIn@1bb266b3]" started-at="2020-02-12T16:58:30 WIB" name="A_003_LoginwithInvalidPassword" finished-at="2020-02-12T16:58:35 WIB" duration-ms="4379" status="PASS">
+        </test-method> <!-- C_001_DisplayofPlaylistList -->
+        <test-method signature="C_002_CreateNewSeriesPlaylist()[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:19 WIB" name="C_002_CreateNewSeriesPlaylist" finished-at="2020-02-20T12:45:21 WIB" duration-ms="2098" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A_003_LoginwithInvalidPassword -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.AuthenticationUserSignIn@1bb266b3]" started-at="2020-02-12T16:58:35 WIB" name="quitDriver" finished-at="2020-02-12T16:58:35 WIB" duration-ms="106" status="PASS">
+        </test-method> <!-- C_002_CreateNewSeriesPlaylist -->
+        <test-method signature="C_003_EditSeriesPlaylist()[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:21 WIB" name="C_003_EditSeriesPlaylist" finished-at="2020-02-20T12:45:24 WIB" depends-on-methods="TestCases.Playlist.C_002_CreateNewSeriesPlaylist" duration-ms="3079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C_003_EditSeriesPlaylist -->
+        <test-method signature="C_004_DeleteSeriesPlaylist()[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:24 WIB" name="C_004_DeleteSeriesPlaylist" finished-at="2020-02-20T12:45:29 WIB" depends-on-methods="TestCases.Playlist.C_003_EditSeriesPlaylist" duration-ms="4758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C_004_DeleteSeriesPlaylist -->
+        <test-method signature="C_005_CreateNewMoviesPlaylist()[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:29 WIB" name="C_005_CreateNewMoviesPlaylist" finished-at="2020-02-20T12:45:31 WIB" depends-on-methods="TestCases.Playlist.C_004_DeleteSeriesPlaylist" duration-ms="1976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C_005_CreateNewMoviesPlaylist -->
+        <test-method signature="C_006_EditMoviesPlaylist()[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:31 WIB" name="C_006_EditMoviesPlaylist" finished-at="2020-02-20T12:45:35 WIB" depends-on-methods="TestCases.Playlist.C_005_CreateNewMoviesPlaylist" duration-ms="4059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C_006_EditMoviesPlaylist -->
+        <test-method signature="C_007_DeleteMoviesPlaylist()[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:35 WIB" name="C_007_DeleteMoviesPlaylist" finished-at="2020-02-20T12:45:39 WIB" depends-on-methods="TestCases.Playlist.C_006_EditMoviesPlaylist" duration-ms="4799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C_007_DeleteMoviesPlaylist -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.Playlist@62e7f11d]" started-at="2020-02-20T12:45:39 WIB" name="quitDriver" finished-at="2020-02-20T12:45:39 WIB" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- TestCases.AuthenticationUserSignIn -->
+      </class> <!-- TestCases.Playlist -->
     </test> <!-- Regresion test for 1.5.35 -->
   </suite> <!-- MySuite -->
 </testng-results>

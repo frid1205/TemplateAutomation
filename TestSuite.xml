@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="MySuite" parallel="tests" thread-count="1" verbose="1">
-	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="browser" value="chrome"/>
+	<parameter name="headless" value="true"/>
   	<test name="Regresion test for 1.5.35" >
 	     <classes>
 	    		<class name="TestCases.AuthenticationUserSignIn">
 	    			<methods>
-						<include name="A_001_LoginwithValidCredential"></include>
-						<include name="A_002_LoginwithInvalidEmail"></include>
-						<include name="A_003_LoginwithInvalidPassword"></include>
+						<exclude name="A_001_LoginwithValidCredential"/>
+						<exclude name="A_002_LoginwithInvalidEmail"/>
+						<exclude name="A_003_LoginwithInvalidPassword"/>
 	    			</methods>
 	    		</class>
 	   			
+	    		<class name="TestCases.AppPages">
+	    			<methods>
+	    				<exclude name="login"/>
+						<exclude name="B_001_displayOfListPage"/>
+						<exclude name="B_002_CreateNewKeyPage"/>
+						<exclude name="B_003_searchAvailableAppPage"/>
+						<exclude name="B_004_editAppPage"/>
+						<exclude name="B_005_deleteAppPage"/>
+						
+	    			</methods>
+	    		</class>
+	    		
+	    		<class name="TestCases.Playlist">
+	    			<methods>
+	    				<include name="login"/>
+						<include name="C_001_DisplayofPlaylistList"/>
+						<include name="C_002_CreateNewSeriesPlaylist"/>
+						<include name="C_003_EditSeriesPlaylist"/>
+						<include name="C_004_DeleteSeriesPlaylist"/>
+						<include name="C_005_CreateNewMoviesPlaylist"/>
+						<include name="C_006_EditMoviesPlaylist"/>
+						<include name="C_007_DeleteMoviesPlaylist"/>
+						
+	    			</methods>
+	    		</class>
+	    		
 	    </classes>  
   </test>
   

@@ -16,7 +16,7 @@ public class Listener implements ITestListener {
  @Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		System.out.println("---!---" + result.getName() + "------");
+		System.out.println("------" + result.getName() + "------");
 	}
 
  @Override

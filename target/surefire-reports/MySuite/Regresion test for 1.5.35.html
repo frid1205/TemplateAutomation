@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 12 13:39:14 WIB 2020</td>
+<td>Started on:</td><td>Thu Feb 13 17:52:43 WIB 2020</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8885 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33349 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.AuthenticationUserSignIn.A_002_LoginwithInvalidCredential()'><b>A_002_LoginwithInvalidCredential</b><br>Test class: TestCases.AuthenticationUserSignIn</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
+<td title='TestCases.AppPages.B_004_editAppPage()'><b>B_004_editAppPage</b><br>Test class: TestCases.AppPages</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button&quot;}
   (Session info: chrome=80.0.3987.100)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;Potatos-Mac.local&apos;, ip: &apos;fe80:0:0:0:8a1:153:e79:bbff%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;9.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3973160ad94519c778b9e394a46f6505
-*** Element info: {Using=name, value=email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:64885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d39c37275fbdf8e04e6e4099787e910f
+*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -92,29 +92,29 @@ Session ID: 3973160ad94519c778b9e394a46f6505
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at pages.AuthenticationSignInPage.typeEmail(AuthenticationSignInPage.java:39)
-	at TestCases.AuthenticationUserSignIn.A_002_LoginwithInvalidCredential(AuthenticationUserSignIn.java:61)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at pages.AppPagesPage.clickAddPlaylistButton(AppPagesPage.java:196)
+	at TestCases.AppPages.B_004_editAppPage(AppPages.java:97)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1380)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
 	at java.base/java.lang.Thread.run(Thread.java:844)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace971758938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace971758938'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace62261049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace62261049'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button&quot;}
   (Session info: chrome=80.0.3987.100)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;Potatos-Mac.local&apos;, ip: &apos;fe80:0:0:0:8a1:153:e79:bbff%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14&apos;, java.version: &apos;9.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3973160ad94519c778b9e394a46f6505
-*** Element info: {Using=name, value=email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/pz/vbvlmv8j3s1...}, goog:chromeOptions: {debuggerAddress: localhost:64885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d39c37275fbdf8e04e6e4099787e910f
+*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -126,14 +126,14 @@ Session ID: 3973160ad94519c778b9e394a46f6505
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at pages.AuthenticationSignInPage.typeEmail(AuthenticationSignInPage.java:39)
-	at TestCases.AuthenticationUserSignIn.A_002_LoginwithInvalidCredential(AuthenticationUserSignIn.java:61)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at pages.AppPagesPage.clickAddPlaylistButton(AppPagesPage.java:196)
+	at TestCases.AppPages.B_004_editAppPage(AppPages.java:97)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,8 +158,8 @@ Session ID: 3973160ad94519c778b9e394a46f6505
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 </pre></div></td>
-<td>0</td>
-<td>TestCases.AuthenticationUserSignIn@747ddf94</td></tr>
+<td>21</td>
+<td>TestCases.AppPages@4c583ecf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -169,10 +169,10 @@ Session ID: 3973160ad94519c778b9e394a46f6505
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.AuthenticationUserSignIn.A_001_LoginwithValidCredential()'><b>A_001_LoginwithValidCredential</b><br>Test class: TestCases.AuthenticationUserSignIn</td>
+<td title='TestCases.AppPages.login()'><b>login</b><br>Test class: TestCases.AppPages</td>
 <td></td>
-<td>2</td>
-<td>TestCases.AuthenticationUserSignIn@747ddf94</td></tr>
+<td>5</td>
+<td>TestCases.AppPages@4c583ecf</td></tr>
 </table><p>
 </body>
 </html>
