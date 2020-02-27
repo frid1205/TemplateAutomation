@@ -18,7 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 public class PlaylistList {
-WebDriver driver;
+	WebDriver driver;
 
 	public PlaylistList(WebDriver driver) {
 		this.driver = driver;

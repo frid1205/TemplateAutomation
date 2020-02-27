@@ -3,8 +3,6 @@
  */
 package pages;
 
-import java.awt.SecondaryLoop;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;

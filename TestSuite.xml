@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="MySuite" parallel="tests" thread-count="1" verbose="1">
 	<parameter name="browser" value="chrome"/>
-	<parameter name="headless" value="true"/>
+	<parameter name="headless" value="false"/>
   	<test name="Regresion test for 1.5.35" >
 	     <classes>
 	    		<class name="TestCases.AuthenticationUserSignIn">
@@ -27,18 +27,57 @@
 	    		
 	    		<class name="TestCases.Playlist">
 	    			<methods>
-	    				<include name="login"/>
-						<include name="C_001_DisplayofPlaylistList"/>
-						<include name="C_002_CreateNewSeriesPlaylist"/>
-						<include name="C_003_EditSeriesPlaylist"/>
-						<include name="C_004_DeleteSeriesPlaylist"/>
-						<include name="C_005_CreateNewMoviesPlaylist"/>
-						<include name="C_006_EditMoviesPlaylist"/>
-						<include name="C_007_DeleteMoviesPlaylist"/>
+	    				<exclude name="login"/>
+						<exclude name="C_001_DisplayofPlaylistList"/>
+						<exclude name="C_002_CreateNewSeriesPlaylist"/>
+						<exclude name="C_003_EditSeriesPlaylist"/>
+						<exclude name="C_004_DeleteSeriesPlaylist"/>
+						<exclude name="C_005_CreateNewMoviesPlaylist"/>
+						<exclude name="C_006_EditMoviesPlaylist"/>
+						<exclude name="C_007_DeleteMoviesPlaylist"/>
+						
+	    			</methods>
+	    		</class>
+	    		<class name="TestCases.Series">
+	    			<methods>
+	    				<exclude name="login"/>
+						<exclude name="C_001_DisplayofPlaylistList"/>
+						<exclude name="C_002_CreateNewSeries"/>
+						<exclude name="C_003_EditSeries"/>
+						<exclude name="C_004_DeleteSeries"/>
 						
 	    			</methods>
 	    		</class>
 	    		
+	    		<class name="TestCases.Events">
+	    			<methods>
+	    				<exclude name="login"/>
+						<exclude name="D_001_CheckEventList"/>
+						<exclude name="D_002_CreateNew"/>
+						<exclude name="D_003_EditEvent"/>
+						<exclude name="D_004_DeleteEvent"/>
+						
+	    			</methods>
+	    		</class>
+	    		
+	    		<class name="TestCases.AppConfiguration">
+	    			<methods>
+	    				<exclude name="login"/>
+						<exclude name="F_001_DisplayofPlaylistList"/>
+						<exclude name="F_002_CreateNewAppConfiguration"/>
+						<exclude name="F_002_EditppConfiguration"/>
+						<exclude name="F_003_DeleteAppConfiguration"/>
+	    			</methods>
+	    		</class>
+	    		
+	    		<class name="TestCases.Customer">
+	    			<methods>
+	    				<include name="login"/>
+	    				<exclude name="G_002_CreateNewCustomer"/>
+						<include name="G_003_EditCustomer"/>
+						
+	    			</methods>
+	    		</class>
 	    </classes>  
   </test>
   
