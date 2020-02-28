@@ -28,7 +28,7 @@ public class BrowserFactory
 		}
 		else if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/SaltMediaCMS1/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/SaltMediaCMS1/chromedriver2");
 			if(headless.equals("true"))
 			{
 				ChromeOptions option = new ChromeOptions();
