@@ -24,8 +24,11 @@ public class Customer extends BaseWeb {
 	@Test
 	public void login() throws InterruptedException
 	{
-		signIn();
-		Thread.sleep(3000);
+		
+		System.out.println("coba jalan gak");
+		/*
+		 * signIn(); Thread.sleep(3000);
+		 */
 	}
 	
 	@Test
