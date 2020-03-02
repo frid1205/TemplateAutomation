@@ -20,7 +20,7 @@ public class BrowserFactory
 	public static WebDriver startBrowser(String browserName, String url, String headless) 
 	{
 		//System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-		System.out.println("coba jalan gak ?");
+		
 		if(browserName.equals("firefox"))
 		{
 			driver = new FirefoxDriver();
@@ -28,7 +28,7 @@ public class BrowserFactory
 		}
 		else if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "/home/ec2-user/seleniumdriver/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 			if(headless.equals("true"))
 			{
 				ChromeOptions option = new ChromeOptions();
