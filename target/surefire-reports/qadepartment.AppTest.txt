@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: qadepartment.AppTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.778 s <<< FAILURE! - in qadepartment.AppTest
-shouldAnswerWithTrue2(qadepartment.AppTest)  Time elapsed: 0.015 s  <<< FAILURE!
-java.lang.AssertionError: did not expect to find [true] but found [false]
-	at qadepartment.AppTest.shouldAnswerWithTrue2(AppTest.java:25)
-
