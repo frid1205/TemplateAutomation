@@ -26,7 +26,7 @@ public class AppConfiguration extends BaseWeb {
 	}
 	
 	@Test
-	public void F_001_DisplayofPlaylistList() throws InterruptedException
+	public void G_001_DisplayofPlaylistList() throws InterruptedException
 	{
 		AppConfigurationList appl = PageFactory.initElements(driver, AppConfigurationList.class);
 		
@@ -39,7 +39,7 @@ public class AppConfiguration extends BaseWeb {
 	}
 	
 	@Test
-	public void F_002_CreateNewAppConfiguration() throws InterruptedException
+	public void G_002_CreateNewAppConfiguration() throws InterruptedException
 	{
 		AppConfigurationList appl = PageFactory.initElements(driver, AppConfigurationList.class);
 		AppConfigurationCreate appc = PageFactory.initElements(driver, AppConfigurationCreate.class);
@@ -62,7 +62,7 @@ public class AppConfiguration extends BaseWeb {
 	}
 	
 	@Test
-	public void F_002_EditppConfiguration() throws InterruptedException
+	public void G_002_EditppConfiguration() throws InterruptedException
 	{
 		AppConfigurationList appl = PageFactory.initElements(driver, AppConfigurationList.class);
 		AppConfigurationEdit appe = PageFactory.initElements(driver, AppConfigurationEdit.class);
@@ -91,7 +91,7 @@ public class AppConfiguration extends BaseWeb {
 	}
 	
 	@Test
-	public void F_003_DeleteAppConfiguration() throws InterruptedException
+	public void G_003_DeleteAppConfiguration() throws InterruptedException
 	{
 		AppConfigurationList appl = PageFactory.initElements(driver, AppConfigurationList.class);
 		AppConfigurationEdit appe = PageFactory.initElements(driver, AppConfigurationEdit.class);

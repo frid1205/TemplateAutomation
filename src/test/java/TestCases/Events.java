@@ -26,7 +26,7 @@ public class Events extends BaseWeb{
 	}
 	
 	@Test
-	public void D_001_CheckEventList() throws InterruptedException
+	public void E_001_CheckEventList() throws InterruptedException
 	{
 		EventList el = PageFactory.initElements(driver, EventList.class);
 		
@@ -39,7 +39,7 @@ public class Events extends BaseWeb{
 	}
 	
 	@Test
-	public void D_002_CreateNew() throws InterruptedException
+	public void E_002_CreateNew() throws InterruptedException
 	{
 		EventList el = PageFactory.initElements(driver, EventList.class);
 		EventCreate ec = PageFactory.initElements(driver, EventCreate.class);
@@ -62,8 +62,8 @@ public class Events extends BaseWeb{
 		Assert.assertTrue(ec.checkAddedEvents(), "Event not found");
 	}
 	
-	@Test(dependsOnMethods = { "D_002_CreateNew" })
-	public void D_003_EditEvent() throws InterruptedException
+	@Test(dependsOnMethods = { "E_002_CreateNew" })
+	public void E_003_EditEvent() throws InterruptedException
 	{
 		EventList el = PageFactory.initElements(driver, EventList.class);
 		EventEdit ed = PageFactory.initElements(driver, EventEdit.class);
@@ -92,8 +92,8 @@ public class Events extends BaseWeb{
 		Assert.assertTrue(ed.checkEditedEvent(), "edited event not found");
 	}
 	
-	@Test(dependsOnMethods = { "D_003_EditEvent" })
-	public void D_004_DeleteEvent() throws InterruptedException
+	@Test(dependsOnMethods = { "E_003_EditEvent" })
+	public void E_004_DeleteEvent() throws InterruptedException
 	{
 		EventList el = PageFactory.initElements(driver, EventList.class);
 		EventEdit ed = PageFactory.initElements(driver, EventEdit.class);

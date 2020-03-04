@@ -30,7 +30,7 @@ public class Customer extends BaseWeb {
 	}
 	
 	@Test
-	public void G_001_CheckEventList() throws InterruptedException
+	public void H_001_CheckPageChecList() throws InterruptedException
 	{
 		CustomerList el = PageFactory.initElements(driver, CustomerList.class);
 		
@@ -46,7 +46,7 @@ public class Customer extends BaseWeb {
 	 * still under develop
 	 */
 	@Test
-	public void G_002_CreateNewCustomer() throws InterruptedException
+	public void H_002_CreateNewCustomer() throws InterruptedException
 	{
 		SoftAssert sa = new SoftAssert();
 		
@@ -69,7 +69,7 @@ public class Customer extends BaseWeb {
 	}
 	
 	@Test
-	public void G_003_EditCustomer() throws InterruptedException
+	public void H_003_EditCustomer() throws InterruptedException
 	{
 		CustomerList cl = PageFactory.initElements(driver, CustomerList.class);
 		CustomerEdit ce = PageFactory.initElements(driver, CustomerEdit.class);

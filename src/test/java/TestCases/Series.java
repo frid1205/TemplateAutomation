@@ -26,7 +26,7 @@ public class Series extends BaseWeb {
 	}
 	
 	@Test
-	public void C_001_DisplayofPlaylistList() throws InterruptedException
+	public void D_001_DisplayofPlaylistList() throws InterruptedException
 	{
 		SeriesList sl = PageFactory.initElements(driver, SeriesList.class);
 		
@@ -39,7 +39,7 @@ public class Series extends BaseWeb {
 	}
 	
 	@Test
-	public void C_002_CreateNewSeries() throws InterruptedException
+	public void D_002_CreateNewSeries() throws InterruptedException
 	{
 		SeriesList sl = PageFactory.initElements(driver, SeriesList.class);
 		SeriesCreate sc = PageFactory.initElements(driver, SeriesCreate.class);
@@ -67,7 +67,7 @@ public class Series extends BaseWeb {
 	}
 	
 	@Test
-	public void C_003_EditSeries() throws InterruptedException
+	public void D_003_EditSeries() throws InterruptedException
 	{
 		SeriesList sl = PageFactory.initElements(driver, SeriesList.class);
 		SeriesEdit se = PageFactory.initElements(driver, SeriesEdit.class);
@@ -100,7 +100,7 @@ public class Series extends BaseWeb {
 	}
 	
 	@Test
-	public void C_004_DeleteSeries() throws InterruptedException
+	public void D_004_DeleteSeries() throws InterruptedException
 	{
 		SeriesList sl = PageFactory.initElements(driver, SeriesList.class);
 		SeriesEdit se = PageFactory.initElements(driver, SeriesEdit.class);
