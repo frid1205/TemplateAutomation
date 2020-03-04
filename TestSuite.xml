@@ -7,9 +7,9 @@
 	     <classes>
 	    		<class name="TestCases.AuthenticationUserSignIn">
 	    			<methods>
-						<include name="A_001_LoginwithValidCredential"/>
-						<include name="A_002_LoginwithInvalidEmail"/>
-						<include name="A_003_LoginwithInvalidPassword"/>
+						<exclude name="A_001_LoginwithValidCredential"/>
+						<exclude name="A_002_LoginwithInvalidEmail"/>
+						<exclude name="A_003_LoginwithInvalidPassword"/>
 	    			</methods>
 	    		</class>
 	   			
@@ -20,7 +20,7 @@
 						<include name="B_002_CreateNewKeyPage"/>
 						<include name="B_003_searchAvailableAppPage"/>
 						<include name="B_004_editAppPage"/>
-						<in clude name="B_005_deleteAppPage"/>
+						<include name="B_005_deleteAppPage"/>
 						
 	    			</methods>
 	    		</class>
