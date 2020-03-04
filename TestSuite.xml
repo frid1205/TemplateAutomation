@@ -20,7 +20,7 @@
 						<include name="B_002_CreateNewKeyPage"/>
 						<include name="B_003_searchAvailableAppPage"/>
 						<include name="B_004_editAppPage"/>
-						<include name="B_005_deleteAppPage"/>
+						<in clude name="B_005_deleteAppPage"/>
 						
 	    			</methods>
 	    		</class>
