@@ -34,49 +34,6 @@ public class Helper extends BaseWeb{
 		
 	}
 	
-	@Test
-	public void writeResultOnExcel(ITestResult result)
-	{
-		try {
-			File src = new File("testSaltCMS.xlsx");
-			
-			fis = new FileInputStream(src);
-    		
-    		wb = new XSSFWorkbook(fis);
-    		
-    		sheet = wb.getSheetAt(0);
-	     
-		    int lastrownumber = sheet.getLastRowNum();
-			int getLastRowFile = sheet.getLastRowNum();
-			String getModuleId;
-			String getCaseNumber;
-			String getModuleIdFromCaseName;
-			String getCaseNumberFromCaseName;
-			
-			for(int countRow = 1;countRow<=lastrownumber;countRow++){
-				XSSFRow row = sheet.getRow(countRow);
-				getModuleId = row.getCell(1).toString();
-				getCaseNumber = row.getCell(2).toString();
-				getModuleIdFromCaseName = result.getName().substring(0, 1);
-				getCaseNumberFromCaseName = result.getName().substring(4, 5);
-				
-				if(getModuleIdFromCaseName.equals(getModuleId)&&getCaseNumberFromCaseName.equals(getCaseNumber)) 
-				{
-					row.createCell(9).setCellValue("Pass");
-					System.out.println("MASUK");
-				}
-					 
-				
-				
-			}
-			FileOutputStream fout = new FileOutputStream(src);
-			wb.write(fout);
-	        fis.close();
-	        fout.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	
 
 }
