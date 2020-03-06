@@ -24,13 +24,12 @@ import org.testng.annotations.Parameters;
 import pages.AuthenticationSignInPage;
 
 @Listeners(bases.Listener.class)
-public class BaseWeb {
+public class BaseWeb{
 	public static WebDriver driver;
 	public static String validAdmin;
 	public static String validPassword;
 	public static String url;
 	WebDriverWait wait;
-	
 	
 	@BeforeSuite
 	public void settupTestingData() {
@@ -100,10 +99,11 @@ public class BaseWeb {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0,-1000)");
 	}
-	
 
 	@AfterClass
 	public void quitDriver() {
 		driver.quit();
 	}
+	
+	
 }

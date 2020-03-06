@@ -5,16 +5,15 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="1" parallel="tests" name="Regresion test for 1.5.35(failed)">
     <classes>
-      <class name="TestCases.Customer">
+      <class name="TestCases.AppPages">
         <methods>
-          <include name="login"/>
           <include name="setBaseConfig"/>
           <include name="settupTestingData"/>
+          <include name="B_003_searchAvailableAppPage"/>
           <include name="quitDriver"/>
           <include name="deleteScreenShot"/>
-          <include name="G_003_EditCustomer"/>
         </methods>
-      </class> <!-- TestCases.Customer -->
+      </class> <!-- TestCases.AppPages -->
     </classes>
   </test> <!-- Regresion test for 1.5.35(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

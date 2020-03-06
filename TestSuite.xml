@@ -17,67 +17,61 @@
 	    			<methods>
 	    				<include name="login"/>
 						<include name="B_001_displayOfListPage"/>
-						<include name="B_002_CreateNewKeyPage"/>
+						<exclude name="B_002_CreateNewKeyPage"/>
 						<include name="B_003_searchAvailableAppPage"/>
-						<include name="B_004_editAppPage"/>
-						<include name="B_005_deleteAppPage"/>
-						
+						<exclude name="B_004_editAppPage"/>
+						<exclude name="B_005_deleteAppPage"/>
 	    			</methods>
 	    		</class>
-	    		
 	    		<class name="TestCases.Playlist">
 	    			<methods>
 	    				<include name="login"/>
 						<include name="C_001_DisplayofPlaylistList"/>
-						<include name="C_002_CreateNewSeriesPlaylist"/>
-						<include name="C_003_EditSeriesPlaylist"/>
-						<include name="C_004_DeleteSeriesPlaylist"/>
-						<include name="C_005_CreateNewMoviesPlaylist"/>
-						<include name="C_006_EditMoviesPlaylist"/>
-						<include name="C_007_DeleteMoviesPlaylist"/>
-						
+						<exclude name="C_002_CreateNewSeriesPlaylist"/>
+						<exclude name="C_003_EditSeriesPlaylist"/>
+						<exclude name="C_004_DeleteSeriesPlaylist"/>
+						<exclude name="C_005_CreateNewMoviesPlaylist"/>
+						<exclude name="C_006_EditMoviesPlaylist"/>
+						<exclude name="C_007_DeleteMoviesPlaylist"/>
 	    			</methods>
 	    		</class>
 	    		<class name="TestCases.Series">
 	    			<methods>
-	    				<include name="login"/>
-						<include name="D_001_DisplayofPlaylistList"/>
-						<include name="D_002_CreateNewSeries"/>
-						<include name="D_003_EditSeries"/>
-						<include name="D_004_DeleteSeries"/>
-						
+	    				<exclude name="login"/>
+						<exclude name="D_001_DisplayofPlaylistList"/>
+						<exclude name="D_002_CreateNewSeries"/>
+						<exclude name="D_003_EditSeries"/>
+						<exclude name="D_004_DeleteSeries"/>
 	    			</methods>
 	    		</class>
-	    		
 	    		<class name="TestCases.Events">
 	    			<methods>
-	    				<include name="login"/>
-						<include name="E_001_CheckEventList"/>
-						<include name="E_002_CreateNew"/>
-						<include name="E_003_EditEvent"/>
-						<include name="E_004_DeleteEvent"/>
-						
+	    				<exclude name="login"/>
+						<exclude name="E_001_CheckEventList"/>
+						<exclude name="E_002_CreateNew"/>
+						<exclude name="E_003_EditEvent"/>
+						<exclude name="E_004_DeleteEvent"/>
 	    			</methods>
 	    		</class>
 	    		
 	    		<class name="TestCases.AppConfiguration">
 	    			<methods>
-	    				<include name="login"/>
-						<include name="G_001_DisplayofPlaylistList"/>
-						<include name="G_002_CreateNewAppConfiguration"/>
-						<include name="G_002_EditppConfiguration"/>
-						<include name="G_003_DeleteAppConfiguration"/>
+	    				<exclude name="login"/>
+						<exclude name="G_001_DisplayofPlaylistList"/>
+						<exclude name="G_002_CreateNewAppConfiguration"/>
+						<exclude name="G_002_EditppConfiguration"/>
+						<exclude name="G_003_DeleteAppConfiguration"/>
+	    			</methods>
+	    		</class>
+	    		<class name="TestCases.Customer">
+	    			<methods>
+	    				<exclude name="login"/>
+	    				<exclude name="H_001_CheckPageList"/>
+	    				<exclude name="H_002_CreateNewCustomer"/>
+						<exclude name="H_003_EditCustomer"/>
 	    			</methods>
 	    		</class>
 	    		
-	    		<class name="TestCases.Customer">
-	    			<methods>
-	    				<include name="login"/>
-	    				<include name="H_002_CreateNewCustomer"/>
-						<include name="H_003_EditCustomer"/>
-						
-	    			</methods>
-	    		</class>
 	    </classes>  
   </test>
   

@@ -30,7 +30,7 @@ public class Customer extends BaseWeb {
 	}
 	
 	@Test
-	public void H_001_CheckPageChecList() throws InterruptedException
+	public void H_001_CheckPageList() throws InterruptedException
 	{
 		CustomerList el = PageFactory.initElements(driver, CustomerList.class);
 		

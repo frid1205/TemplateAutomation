@@ -76,7 +76,7 @@ public class AppPages extends BaseWeb {
 		
 	}
 	
-	@Test(dependsOnMethods = { "B_002_CreateNewKeyPage" })
+	@Test//(dependsOnMethods = { "B_002_CreateNewKeyPage" })
 	public void B_003_searchAvailableAppPage() throws InterruptedException
 	{
 		AppPageList appPage = PageFactory.initElements(driver, AppPageList.class);
@@ -88,7 +88,7 @@ public class AppPages extends BaseWeb {
 		Assert.assertTrue(appPage.addedAppPage(), "search failed");
 	}
 	
-	@Test(dependsOnMethods = { "B_003_searchAvailableAppPage" })
+	@Test//(dependsOnMethods = { "B_003_searchAvailableAppPage" })
 	public void B_004_editAppPage() throws InterruptedException
 	{
 		AppPageList appPage = PageFactory.initElements(driver, AppPageList.class);
